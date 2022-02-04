@@ -1,0 +1,45 @@
+.active {
+  border: 3px solid red;
+}
+
+.paginaton-stripe__page-identifer {
+  color: $orange;
+  font-size: large;
+}
+
+.pagination-stripe__descriptor {
+  @extend .p-0;
+  @extend .m-0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.pagination-stripe__btn {
+  @extend .m-1;
+  @extend .btn-primary;
+  @extend .border-2;
+  @extend .border-dark;
+  @extend .rounded;
+}
+
+.pagination-stripe__btn--active {
+  @extend .btn-success;
+  @extend .border-2;
+  @extend .border-dark;
+  @extend .rounded;
+}
+
+.pagination-next-btn {
+  @extend .btn-primary;
+  @extend .border-2;
+  @extend .border-dark;
+  @extend .rounded;
+}
+
+.pagination-stripe__prev-btn {
+  @extend .btn-primary;
+  @extend .border-2;
+  @extend .border-dark;
+  @extend .rounded;
+}

@@ -1,0 +1,19 @@
+
+.color-picker {
+  @extend .btn-sm;
+  @extend .btn-outline-secondary;
+  @extend .border-2;
+  @extend .p-0;
+  & input {
+    border: none;
+    // border-radius: 0.5rem;
+  }
+
+  & label {
+    @extend .p-1;
+  }
+
+  & * {
+    background-color: transparent;
+  }
+}
