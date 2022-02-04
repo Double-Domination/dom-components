@@ -1,4 +1,4 @@
-import { IHeaderBlockViewInit } from './IToyCard';
+// import { IHeaderBlockViewInit } from './IToyCard';
 
 export type StateObject = {
   [key: string]: string | any;
