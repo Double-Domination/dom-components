@@ -1,19 +1,25 @@
 import { DOMFactory } from './dom-factory';
 
-import GaragePage from '../templates/garage-page/garage-page';
-import WinnersPage from '../templates/winners-page/winners-page';
+import ExamplePage from '../templates/example-page/example-page';
 
 class RouterController {
   page: DOMFactory;
 
-  private defaultPageId = 'garage';
+  // страница по умолчанию
+  private defaultPageId = 'example';
 
 /**
  * @param {DOMFactory} pageClass simply pass to object key page constructor
  *  */ 
   private PageIDList: { [key: string]: DOMFactory } = {
-    garage: new GaragePage(),
-    winners: new WinnersPage(),
+    //собствено сдесь конструкторы каждой страницы по отдельности
+    example: new ExamplePage({
+      someRecivedValue:'какое либо передаваемое значение'
+    }),
+
+    emptyPage: new DOMFactory({
+      nodeContent:'просто пустая страница'
+    })
   };
 
   constructor() {
